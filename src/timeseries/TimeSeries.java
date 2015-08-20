@@ -55,44 +55,39 @@ public abstract class TimeSeries {
     }
 
     /**
-     * This abstract method will be used to add Data(Points) to the TimeSeries
-     * @param nx this value will be added as a new DataPoint
-     */
-    public abstract void addData(double nx);
-
-    /**
-     * This abstract method will be used to get DataPoints of the TimeSeries via the independent variable t
-     * @param t get the DataPoint at t
-     * @return DataPoint Reference
-     */
-    public abstract DataPoint getDataPoint(double t);
-
-    /**
-     * Gets the DataPoint at Index
+     * Gets the t-value at index "index"
      * @param index
-     * @return DataPoint
+     * @return t-value
      */
-    public DataPoint getDataPoint(long index) {
-        long i = 0;
-        if(this.root!=null) {
-            DataPoint walker = this.root;
-            do {
-                if(i==index) {
-                    return walker;
-                }
-                i++;
-            }while((walker=walker.getNextDataPoint())!=null);
-            //index is out of bounds
-            throw new IndexOutOfBoundsException();
+    public double getT(long index) {
+        DataPoint walker = this.root;
+        long i = index;
+        while(walker!=null) {
+            if(index==i) {
+                return walker.getT();
+            }
+            walker = walker.getNextDataPoint();
+            i++;
         }
-        throw new NullPointerException();       //Throw a NullPointerException
+        return walker.getT();   //Throw Exception
     }
 
     /**
-     * This method will insert DataPoints via Index
-     * @param index at this position the DataPoint will be inserted
+     * Gets the x value of a DataPoint at index position "index".
      */
-    public abstract void insertDataPoint(long index);
+    public double getX(long index) {
+        DataPoint walker = this.root;
+        long i = index;
+        while(walker!=null) {
+            if(index==i) {
+                return walker.getX();
+            }
+            walker = walker.getNextDataPoint();
+            i++;
+        }
+        return walker.getX();   //Throw Exception
+    }
+
 
     /**
      * Calculates the max value of the time series
@@ -193,17 +188,7 @@ public abstract class TimeSeries {
      */
     public abstract TimeSeries subSeries(long fIndex, long tIndex);
 
-    /**
-     * This abstract method will remove a DataPoint from the time series via
-     * @param t DataPoint at this position
-     */
-    public abstract void removeDataPoint(double t);
-
-    /**
-     * This abstract method will remove a DataPoint from the time series via
-     * @param index DataPoint at this index
-     */
-    public abstract void removeDataPoint(long index);
+    public abstract TimeSeries divert();
 
 
 }

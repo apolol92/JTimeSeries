@@ -99,7 +99,9 @@ public class DataPoint {
      * @param nPrevDataPoint the reference to the new prevDataPoint.
      */
     protected void setPrevDataPoint(DataPoint nPrevDataPoint) {
+
         this.prevDataPoint = prevDataPoint;
+        this.prevDataPoint.nextDataPoint = this;
     }
 
     /**
@@ -116,6 +118,7 @@ public class DataPoint {
      */
     protected void setNextDataPoint(DataPoint nNextDataPoint) {
         this.nextDataPoint = nextDataPoint;
+        this.nextDataPoint.prevDataPoint = this;
     }
 
     /**
