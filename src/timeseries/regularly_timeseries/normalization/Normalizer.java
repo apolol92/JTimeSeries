@@ -9,15 +9,20 @@
 
 package timeseries.regularly_timeseries.normalization;
 
-import com.sun.org.apache.xpath.internal.axes.WalkerFactory;
-import timeseries.DataPoint;
+
 import timeseries.RegularlyTimeSeries;
 
 /**
  * Created by apolol92 on 20.08.15.
+ * Normalize can be used for better time series comparison..
  */
 public class Normalizer {
 
+    /**
+     * Calculates the min/max-normalization
+     * @param ts which time series should be normalized?
+     * @return normalized time series
+     */
     public static RegularlyTimeSeries minMaxNormalization(RegularlyTimeSeries ts) {
         double min = ts.min();
         double max = ts.max();
@@ -33,6 +38,11 @@ public class Normalizer {
         return  nTimeSeries;
     }
 
+    /**
+     * Calculate the z-score normalization
+     * @param ts which time series should be normalized?
+     * @return normalized time series
+     */
     public static RegularlyTimeSeries zScoreNormalization(RegularlyTimeSeries ts) {
         double mean = ts.mean();
         double stddev = ts.standardDeviation();

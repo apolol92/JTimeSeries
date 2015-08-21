@@ -82,7 +82,7 @@ public class DataPoint {
      * @param nx the new value of t he dependent variable x.
      */
     public void setX(double nx) {
-        this.x = x;
+        this.x = nx;
     }
 
 
@@ -99,8 +99,7 @@ public class DataPoint {
      * @param nPrevDataPoint the reference to the new prevDataPoint.
      */
     protected void setPrevDataPoint(DataPoint nPrevDataPoint) {
-
-        this.prevDataPoint = prevDataPoint;
+        this.prevDataPoint = nPrevDataPoint;
         this.prevDataPoint.nextDataPoint = this;
     }
 
@@ -109,7 +108,7 @@ public class DataPoint {
      * @return the current reference to the next DataPoint in the time series.
      */
     public DataPoint getNextDataPoint() {
-        return nextDataPoint;
+        return this.nextDataPoint;
     }
 
     /**
@@ -117,8 +116,8 @@ public class DataPoint {
      * @param nNextDataPoint is the reference to the new nextDataPoint
      */
     protected void setNextDataPoint(DataPoint nNextDataPoint) {
-        this.nextDataPoint = nextDataPoint;
-        this.nextDataPoint.prevDataPoint = this;
+        nNextDataPoint.prevDataPoint= this;
+        this.nextDataPoint = nNextDataPoint;
     }
 
     /**

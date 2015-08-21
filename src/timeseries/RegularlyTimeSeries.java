@@ -96,8 +96,7 @@ public class RegularlyTimeSeries extends TimeSeries {
         if(super.root!=null) {
             super.last.setNextDataPoint(new DataPoint(super.last.getT() + this.spacing, nx));
             super.last = super.last.getNextDataPoint();
-        }
-        else {
+        } else {
             super.root = new DataPoint(0, nx);
             super.last = super.root;
         }

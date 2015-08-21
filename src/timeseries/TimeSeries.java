@@ -61,7 +61,7 @@ public abstract class TimeSeries {
      */
     public double getT(long index) {
         DataPoint walker = this.root;
-        long i = index;
+        long i = 0;
         while(walker!=null) {
             if(index==i) {
                 return walker.getT();
@@ -77,7 +77,7 @@ public abstract class TimeSeries {
      */
     public double getX(long index) {
         DataPoint walker = this.root;
-        long i = index;
+        long i =0;
         while(walker!=null) {
             if(index==i) {
                 return walker.getX();
@@ -86,6 +86,22 @@ public abstract class TimeSeries {
             i++;
         }
         return walker.getX();   //Throw Exception
+    }
+
+    /**
+     * Gets the x value of a DataPoint at index position "index".
+     */
+    public double getGradient(long index) {
+        DataPoint walker = this.root;
+        long i =0;
+        while(walker!=null) {
+            if(index==i) {
+                return walker.gradient();
+            }
+            walker = walker.getNextDataPoint();
+            i++;
+        }
+        return walker.gradient();   //Throw Exception
     }
 
 
@@ -188,7 +204,22 @@ public abstract class TimeSeries {
      */
     public abstract TimeSeries subSeries(long fIndex, long tIndex);
 
+    /**
+     * This method will divert the time series..
+     * @return the diverted time series..
+     */
     public abstract TimeSeries divert();
 
-
+    @Override
+    public String toString() {
+        long i = 0;
+        DataPoint walker = this.root;
+        StringBuilder sb = new StringBuilder("");
+        while(walker!=null) {
+            sb.append(walker.getT()+" : " + walker.getX() + "\n");
+            walker = walker.getNextDataPoint();
+            i++;
+        }
+        return sb.toString();
+    }
 }

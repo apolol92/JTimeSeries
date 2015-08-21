@@ -21,6 +21,10 @@ public class MovingAverageFilter {
      */
     private long windowSize;
 
+    /**
+     * Initialize the MovingAverageFilter..
+     * @param windowSize as window size
+     */
     public MovingAverageFilter(long windowSize) {
         this.windowSize = windowSize;
     }
