@@ -1,0 +1,117 @@
+\hypertarget{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a}{}\section{timeseries.\+regularly\+\_\+timeseries.\+transformation.\+P\+A\+A Class Reference}
+\label{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a}\index{timeseries.\+regularly\+\_\+timeseries.\+transformation.\+P\+A\+A@{timeseries.\+regularly\+\_\+timeseries.\+transformation.\+P\+A\+A}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_a1932514163d1c6e24e9b4bd38f6a587c}{P\+A\+A} (long window\+Size)
+\item 
+long \hyperlink{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_adca83f98f64a2c0006d683e0a733612b}{get\+Window\+Size} ()
+\item 
+void \hyperlink{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_adb985da9df6fb94324643afc2797f49b}{set\+Window\+Size} (long window\+Size)
+\item 
+\hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} \hyperlink{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_ac43ad5fe7ce6d8837fbd2c6647ac6a1c}{dimension\+Reduction} (\hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} ts)
+\item 
+\hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} \hyperlink{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_a3746512b4df95795b7a13d98b01fd814}{approximation} (\hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} ts)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by apolol92 on 20.\+08.\+15. Piecewise Aggregate Approximation(\+P\+A\+A) use a non-\/overlapping window of length W. It can be used for dimensionality reduction by replacing all Data\+Points in the window with the window-\/mean. It also can be used to approximate a time series. 
+
+Definition at line 21 of file P\+A\+A.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_a1932514163d1c6e24e9b4bd38f6a587c}{}\index{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A@{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A}!P\+A\+A@{P\+A\+A}}
+\index{P\+A\+A@{P\+A\+A}!timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A@{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A}}
+\subsubsection[{P\+A\+A}]{\setlength{\rightskip}{0pt plus 5cm}timeseries.\+regularly\+\_\+timeseries.\+transformation.\+P\+A\+A.\+P\+A\+A (
+\begin{DoxyParamCaption}
+\item[{long}]{window\+Size}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_a1932514163d1c6e24e9b4bd38f6a587c}
+Initialize a Piecewise Aggregate Approximation(\+P\+A\+A) 
+\begin{DoxyParams}{Parameters}
+{\em window\+Size,the} & size of the window \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file P\+A\+A.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_a3746512b4df95795b7a13d98b01fd814}{}\index{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A@{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A}!approximation@{approximation}}
+\index{approximation@{approximation}!timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A@{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A}}
+\subsubsection[{approximation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Regularly\+Time\+Series} timeseries.\+regularly\+\_\+timeseries.\+transformation.\+P\+A\+A.\+approximation (
+\begin{DoxyParamCaption}
+\item[{{\bf Regularly\+Time\+Series}}]{ts}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_a3746512b4df95795b7a13d98b01fd814}
+Approximate the given time series 
+\begin{DoxyParams}{Parameters}
+{\em ts} & given time series \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+approximation of the given time series 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file P\+A\+A.\+java.
+
+\hypertarget{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_ac43ad5fe7ce6d8837fbd2c6647ac6a1c}{}\index{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A@{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A}!dimension\+Reduction@{dimension\+Reduction}}
+\index{dimension\+Reduction@{dimension\+Reduction}!timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A@{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A}}
+\subsubsection[{dimension\+Reduction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Regularly\+Time\+Series} timeseries.\+regularly\+\_\+timeseries.\+transformation.\+P\+A\+A.\+dimension\+Reduction (
+\begin{DoxyParamCaption}
+\item[{{\bf Regularly\+Time\+Series}}]{ts}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_ac43ad5fe7ce6d8837fbd2c6647ac6a1c}
+Reduce the dimension of the given time series 
+\begin{DoxyParams}{Parameters}
+{\em ts} & given time series \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the reduced dimension time series 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file P\+A\+A.\+java.
+
+\hypertarget{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_adca83f98f64a2c0006d683e0a733612b}{}\index{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A@{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A}!get\+Window\+Size@{get\+Window\+Size}}
+\index{get\+Window\+Size@{get\+Window\+Size}!timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A@{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A}}
+\subsubsection[{get\+Window\+Size}]{\setlength{\rightskip}{0pt plus 5cm}long timeseries.\+regularly\+\_\+timeseries.\+transformation.\+P\+A\+A.\+get\+Window\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_adca83f98f64a2c0006d683e0a733612b}
+Get the window size \begin{DoxyReturn}{Returns}
+the window size 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file P\+A\+A.\+java.
+
+\hypertarget{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_adb985da9df6fb94324643afc2797f49b}{}\index{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A@{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A}!set\+Window\+Size@{set\+Window\+Size}}
+\index{set\+Window\+Size@{set\+Window\+Size}!timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A@{timeseries\+::regularly\+\_\+timeseries\+::transformation\+::\+P\+A\+A}}
+\subsubsection[{set\+Window\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void timeseries.\+regularly\+\_\+timeseries.\+transformation.\+P\+A\+A.\+set\+Window\+Size (
+\begin{DoxyParamCaption}
+\item[{long}]{window\+Size}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1regularly__timeseries_1_1transformation_1_1_p_a_a_adb985da9df6fb94324643afc2797f49b}
+Sets the window size 
+\begin{DoxyParams}{Parameters}
+{\em window\+Size} & new window size \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 47 of file P\+A\+A.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/apolol92/\+Dokumente/\+Programmierung/\+Java/\+J\+Time\+Series/src/timeseries/regularly\+\_\+timeseries/transformation/\hyperlink{_p_a_a_8java}{P\+A\+A.\+java}\end{DoxyCompactItemize}

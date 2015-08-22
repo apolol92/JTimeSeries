@@ -13,9 +13,18 @@ import timeseries.RegularlyTimeSeries;
 
 /**
  * Created by apolol92 on 22.08.15.
+ * To be able to evaluate the goodness of a forecasting model or to compare different methods, we can use
+ * following evaluation methods.
+ * Until now, not all the methods implemented.
  */
 public class Evaluator {
 
+    /**
+     * This method calculates the mean absolute error.
+     * @param observations the "real" time series
+     * @param model the estimated time series
+     * @return the mean absolute error
+     */
     public static double MeanAbsoluteError(RegularlyTimeSeries observations, RegularlyTimeSeries model) {
         double sum = 0;
         for(long i = 0; i < observations.size(); i++) {
@@ -24,6 +33,12 @@ public class Evaluator {
         return sum/observations.size();
     }
 
+    /**
+     * This method calculates the mean squared error
+     * @param observations the "real" time series
+     * @param model the estimated time series
+     * @return the mean squared error
+     */
     public static double MeanSquaredError(RegularlyTimeSeries observations, RegularlyTimeSeries model) {
         double sum = 0;
         for(long i = 0; i < observations.size(); i++) {
@@ -32,6 +47,12 @@ public class Evaluator {
         return sum/observations.size();
     }
 
+    /**
+     * This method calculates the root mean squared error
+     * @param observations the "real" time series
+     * @param model the estimated time series
+     * @return the root mean squared error
+     */
     public static double RootMeanSquaredError(RegularlyTimeSeries observations, RegularlyTimeSeries model) {
         double sum = 0;
         System.out.println(observations.size()+" "+model.size());

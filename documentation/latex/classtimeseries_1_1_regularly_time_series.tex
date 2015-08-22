@@ -1,0 +1,255 @@
+\hypertarget{classtimeseries_1_1_regularly_time_series}{}\section{timeseries.\+Regularly\+Time\+Series Class Reference}
+\label{classtimeseries_1_1_regularly_time_series}\index{timeseries.\+Regularly\+Time\+Series@{timeseries.\+Regularly\+Time\+Series}}
+
+
+Inheritance diagram for timeseries.\+Regularly\+Time\+Series\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classtimeseries_1_1_regularly_time_series__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for timeseries.\+Regularly\+Time\+Series\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classtimeseries_1_1_regularly_time_series__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtimeseries_1_1_regularly_time_series_ada900123604958ddae734c40bab636e7}{Regularly\+Time\+Series} ()
+\item 
+\hyperlink{classtimeseries_1_1_regularly_time_series_a278db93dcce4c470b666d9b5758c838a}{Regularly\+Time\+Series} (double n\+Spacing)
+\item 
+\hyperlink{classtimeseries_1_1_regularly_time_series_ab02cf758028f6ee2f54cd1b00895348a}{Regularly\+Time\+Series} (double n\+Spacing, double nt, double nx)
+\item 
+double \hyperlink{classtimeseries_1_1_regularly_time_series_a2cea069690717b0f52775619c5e2aa8e}{get\+Spacing} ()
+\item 
+long \hyperlink{classtimeseries_1_1_regularly_time_series_a635ace3b88199750c47882d546255515}{size} ()
+\item 
+void \hyperlink{classtimeseries_1_1_regularly_time_series_a0735eaa4a72c73ea82c65c9691bd2c11}{add\+First\+Data\+Point} (double nt, double nx)
+\item 
+void \hyperlink{classtimeseries_1_1_regularly_time_series_a81e7fa5652d91d707d99005c8ffef413}{add\+X} (double nx)
+\item 
+double \hyperlink{classtimeseries_1_1_regularly_time_series_a42fa72dae696838e7ec8842c037bfe6f}{get\+X} (double t)
+\item 
+\hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} \hyperlink{classtimeseries_1_1_regularly_time_series_a46c28fb21d2fe1adcd9dbf2c3c1f72d2}{sub\+Series} (double ft, double tt)
+\item 
+\hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} \hyperlink{classtimeseries_1_1_regularly_time_series_a461fceebc34325112ac6f680ccbb78d3}{sub\+Series} (long f\+Index, long t\+Index)
+\item 
+\hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} \hyperlink{classtimeseries_1_1_regularly_time_series_a4c9c8f659f669b987fa62d95c8820c34}{divert} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Created by apolol92 on 20.\+08.\+15. Represents a regulary time series. Regulary time series has got a constant spacing between the data points. The standard spacing in this class is 1. You can change the spacing by the initialization. 
+
+Definition at line 18 of file Regularly\+Time\+Series.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtimeseries_1_1_regularly_time_series_ada900123604958ddae734c40bab636e7}{}\index{timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}!Regularly\+Time\+Series@{Regularly\+Time\+Series}}
+\index{Regularly\+Time\+Series@{Regularly\+Time\+Series}!timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}}
+\subsubsection[{Regularly\+Time\+Series}]{\setlength{\rightskip}{0pt plus 5cm}timeseries.\+Regularly\+Time\+Series.\+Regularly\+Time\+Series (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_regularly_time_series_ada900123604958ddae734c40bab636e7}
+Initialize an empty Regularlyt\+Time\+Series with default spacing 1 
+
+Definition at line 28 of file Regularly\+Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_regularly_time_series_a278db93dcce4c470b666d9b5758c838a}{}\index{timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}!Regularly\+Time\+Series@{Regularly\+Time\+Series}}
+\index{Regularly\+Time\+Series@{Regularly\+Time\+Series}!timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}}
+\subsubsection[{Regularly\+Time\+Series}]{\setlength{\rightskip}{0pt plus 5cm}timeseries.\+Regularly\+Time\+Series.\+Regularly\+Time\+Series (
+\begin{DoxyParamCaption}
+\item[{double}]{n\+Spacing}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_regularly_time_series_a278db93dcce4c470b666d9b5758c838a}
+Initialize an empty Regularlyt\+Time\+Series with spacing = n\+Spacing 
+\begin{DoxyParams}{Parameters}
+{\em n\+Spacing} & specifics the spacing beetween every observation/\+Data\+Point \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Regularly\+Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_regularly_time_series_ab02cf758028f6ee2f54cd1b00895348a}{}\index{timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}!Regularly\+Time\+Series@{Regularly\+Time\+Series}}
+\index{Regularly\+Time\+Series@{Regularly\+Time\+Series}!timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}}
+\subsubsection[{Regularly\+Time\+Series}]{\setlength{\rightskip}{0pt plus 5cm}timeseries.\+Regularly\+Time\+Series.\+Regularly\+Time\+Series (
+\begin{DoxyParamCaption}
+\item[{double}]{n\+Spacing, }
+\item[{double}]{nt, }
+\item[{double}]{nx}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_regularly_time_series_ab02cf758028f6ee2f54cd1b00895348a}
+Initialize a Regulary\+Time\+Series with spacing = n\+Spacing and the first Data\+Point(nt,nx) 
+\begin{DoxyParams}{Parameters}
+{\em n\+Spacing} & specifics the spacing beetween every observation/\+Data\+Point \\
+\hline
+{\em nt} & t value(independent value) \\
+\hline
+{\em nx} & x value(dependent value) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file Regularly\+Time\+Series.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtimeseries_1_1_regularly_time_series_a0735eaa4a72c73ea82c65c9691bd2c11}{}\index{timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}!add\+First\+Data\+Point@{add\+First\+Data\+Point}}
+\index{add\+First\+Data\+Point@{add\+First\+Data\+Point}!timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}}
+\subsubsection[{add\+First\+Data\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void timeseries.\+Regularly\+Time\+Series.\+add\+First\+Data\+Point (
+\begin{DoxyParamCaption}
+\item[{double}]{nt, }
+\item[{double}]{nx}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_regularly_time_series_a0735eaa4a72c73ea82c65c9691bd2c11}
+If the regularly time series is empty, then use this method to add the first \hyperlink{classtimeseries_1_1_data_point}{Data\+Point}. 
+\begin{DoxyParams}{Parameters}
+{\em nt} & t-\/value \\
+\hline
+{\em nx} & x-\/value \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file Regularly\+Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_regularly_time_series_a81e7fa5652d91d707d99005c8ffef413}{}\index{timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}!add\+X@{add\+X}}
+\index{add\+X@{add\+X}!timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}}
+\subsubsection[{add\+X}]{\setlength{\rightskip}{0pt plus 5cm}void timeseries.\+Regularly\+Time\+Series.\+add\+X (
+\begin{DoxyParamCaption}
+\item[{double}]{nx}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_regularly_time_series_a81e7fa5652d91d707d99005c8ffef413}
+Add a new \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} to the Regularlyt\+Time\+Series. It calculates the t-\/value by itself \& only need the x-\/value. If there was no \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} set till now, it automatically set the \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} t-\/value to 0. 
+\begin{DoxyParams}{Parameters}
+{\em nx} & x-\/value \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 95 of file Regularly\+Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_regularly_time_series_a4c9c8f659f669b987fa62d95c8820c34}{}\index{timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}!divert@{divert}}
+\index{divert@{divert}!timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}}
+\subsubsection[{divert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Regularly\+Time\+Series} timeseries.\+Regularly\+Time\+Series.\+divert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_regularly_time_series_a4c9c8f659f669b987fa62d95c8820c34}
+Calculate a diverted time series of the original time series.. It can be used to remove trends from time series.. If you have got a linear trend, divert onetimes.. If you have got a quadratic trend, divert twotimes.. If you have got a n trend, divert n-\/times.. \begin{DoxyReturn}{Returns}
+the diverted time series 
+\end{DoxyReturn}
+
+
+Definition at line 193 of file Regularly\+Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_regularly_time_series_a2cea069690717b0f52775619c5e2aa8e}{}\index{timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}!get\+Spacing@{get\+Spacing}}
+\index{get\+Spacing@{get\+Spacing}!timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}}
+\subsubsection[{get\+Spacing}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Regularly\+Time\+Series.\+get\+Spacing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_regularly_time_series_a2cea069690717b0f52775619c5e2aa8e}
+Gets the spacing between the ticks \begin{DoxyReturn}{Returns}
+spacing 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file Regularly\+Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_regularly_time_series_a42fa72dae696838e7ec8842c037bfe6f}{}\index{timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}!get\+X@{get\+X}}
+\index{get\+X@{get\+X}!timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}}
+\subsubsection[{get\+X}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Regularly\+Time\+Series.\+get\+X (
+\begin{DoxyParamCaption}
+\item[{double}]{t}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_regularly_time_series_a42fa72dae696838e7ec8842c037bfe6f}
+Get the x-\/value at t 
+\begin{DoxyParams}{Parameters}
+{\em t} & position in time series \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+x-\/value at this position 
+\end{DoxyReturn}
+
+
+Definition at line 110 of file Regularly\+Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_regularly_time_series_a635ace3b88199750c47882d546255515}{}\index{timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}!size@{size}}
+\index{size@{size}!timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}long timeseries.\+Regularly\+Time\+Series.\+size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_regularly_time_series_a635ace3b88199750c47882d546255515}
+Counts the amount of Data\+Points \begin{DoxyReturn}{Returns}
+the amount of Data\+Points 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file Regularly\+Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_regularly_time_series_a46c28fb21d2fe1adcd9dbf2c3c1f72d2}{}\index{timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}!sub\+Series@{sub\+Series}}
+\index{sub\+Series@{sub\+Series}!timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}}
+\subsubsection[{sub\+Series}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Regularly\+Time\+Series} timeseries.\+Regularly\+Time\+Series.\+sub\+Series (
+\begin{DoxyParamCaption}
+\item[{double}]{ft, }
+\item[{double}]{tt}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_regularly_time_series_a46c28fb21d2fe1adcd9dbf2c3c1f72d2}
+Creates a sub Regulary\+Time\+Series. 
+\begin{DoxyParams}{Parameters}
+{\em ft} & from t \\
+\hline
+{\em tt} & to t (including this one) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 131 of file Regularly\+Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_regularly_time_series_a461fceebc34325112ac6f680ccbb78d3}{}\index{timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}!sub\+Series@{sub\+Series}}
+\index{sub\+Series@{sub\+Series}!timeseries\+::\+Regularly\+Time\+Series@{timeseries\+::\+Regularly\+Time\+Series}}
+\subsubsection[{sub\+Series}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Regularly\+Time\+Series} timeseries.\+Regularly\+Time\+Series.\+sub\+Series (
+\begin{DoxyParamCaption}
+\item[{long}]{f\+Index, }
+\item[{long}]{t\+Index}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_regularly_time_series_a461fceebc34325112ac6f680ccbb78d3}
+Creates a sub Regulary\+Time\+Series 
+\begin{DoxyParams}{Parameters}
+{\em f\+Index} & from index \\
+\hline
+{\em t\+Index} & to index (including this one) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 160 of file Regularly\+Time\+Series.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/apolol92/\+Dokumente/\+Programmierung/\+Java/\+J\+Time\+Series/src/timeseries/\hyperlink{_regularly_time_series_8java}{Regularly\+Time\+Series.\+java}\end{DoxyCompactItemize}

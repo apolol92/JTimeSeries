@@ -1,0 +1,323 @@
+\hypertarget{classtimeseries_1_1_time_series}{}\section{timeseries.\+Time\+Series Class Reference}
+\label{classtimeseries_1_1_time_series}\index{timeseries.\+Time\+Series@{timeseries.\+Time\+Series}}
+
+
+Inheritance diagram for timeseries.\+Time\+Series\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classtimeseries_1_1_time_series__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for timeseries.\+Time\+Series\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classtimeseries_1_1_time_series__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract long \hyperlink{classtimeseries_1_1_time_series_a390324a52568f45892838f08142b8e44}{size} ()
+\item 
+double \hyperlink{classtimeseries_1_1_time_series_a21a48f6a58aefd8b7261acccfc442425}{length} ()
+\item 
+double \hyperlink{classtimeseries_1_1_time_series_a756d884d57220f887a2425e850450f33}{get\+T} (long index)
+\item 
+double \hyperlink{classtimeseries_1_1_time_series_a1bf3cb62b9976193264b68ef8d001919}{get\+X} (long index)
+\item 
+double \hyperlink{classtimeseries_1_1_time_series_a0cd53da9484fd4ee3b5c5110e79c0a7e}{get\+Gradient} (long index)
+\item 
+double \hyperlink{classtimeseries_1_1_time_series_ac841bb482c0ef9fe79839c255406c8c6}{max} ()
+\item 
+double \hyperlink{classtimeseries_1_1_time_series_a06f25367736b3f59807e6f060650bc7e}{min} ()
+\item 
+double \hyperlink{classtimeseries_1_1_time_series_a70d9b8388e8b729ce9a719b25d3016aa}{mean} ()
+\item 
+double \hyperlink{classtimeseries_1_1_time_series_a255d92682fb235b5c9dbb4d803d7f8d3}{variance} ()
+\item 
+double \hyperlink{classtimeseries_1_1_time_series_a326e8450cc7ce9bc2118255227d20664}{standard\+Deviation} ()
+\item 
+double \hyperlink{classtimeseries_1_1_time_series_a7851e2236b47e0c3440a949bda2bea91}{median} ()
+\item 
+abstract \hyperlink{classtimeseries_1_1_time_series}{Time\+Series} \hyperlink{classtimeseries_1_1_time_series_ac3422314d9131982a0c8f35eb4a99fc2}{sub\+Series} (double ft, double tt)
+\item 
+abstract \hyperlink{classtimeseries_1_1_time_series}{Time\+Series} \hyperlink{classtimeseries_1_1_time_series_a13599863c16f9c8c029c1f0ba9a17202}{sub\+Series} (long f\+Index, long t\+Index)
+\item 
+abstract \hyperlink{classtimeseries_1_1_time_series}{Time\+Series} \hyperlink{classtimeseries_1_1_time_series_a91f886289adc77eb25bb5f58667d2049}{divert} ()
+\item 
+String \hyperlink{classtimeseries_1_1_time_series_abc1e7b0fb89081f2214c7ef29efe23b2}{to\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtimeseries_1_1_time_series_ace12d3eb25b3d267b90c7c08a4f4445d}{Time\+Series} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtimeseries_1_1_data_point}{Data\+Point} \hyperlink{classtimeseries_1_1_time_series_affc228300a6e7aeff7646df39da9269a}{root}
+\item 
+\hyperlink{classtimeseries_1_1_data_point}{Data\+Point} \hyperlink{classtimeseries_1_1_time_series_afeb87d5f2b84516c9cad5623a497a783}{last}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by apolol92 on 20.\+08.\+15. Represents a time series. A time series is a sequence of data points. There are two types of time series\+:
+\begin{DoxyItemize}
+\item Regular time series\+: The spacing between every observation/data point is always the same
+\item Irregular time series\+: The spacing between every observation/data point is different But these two types have much in common. For this reason we use an abstract parent class called \hyperlink{classtimeseries_1_1_time_series}{Time\+Series}. 
+\end{DoxyItemize}
+
+Definition at line 23 of file Time\+Series.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtimeseries_1_1_time_series_ace12d3eb25b3d267b90c7c08a4f4445d}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!Time\+Series@{Time\+Series}}
+\index{Time\+Series@{Time\+Series}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{Time\+Series}]{\setlength{\rightskip}{0pt plus 5cm}timeseries.\+Time\+Series.\+Time\+Series (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classtimeseries_1_1_time_series_ace12d3eb25b3d267b90c7c08a4f4445d}
+This standard constructor initialize the \hyperlink{classtimeseries_1_1_time_series}{Time\+Series}. 
+
+Definition at line 37 of file Time\+Series.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtimeseries_1_1_time_series_a91f886289adc77eb25bb5f58667d2049}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!divert@{divert}}
+\index{divert@{divert}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{divert}]{\setlength{\rightskip}{0pt plus 5cm}abstract {\bf Time\+Series} timeseries.\+Time\+Series.\+divert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{classtimeseries_1_1_time_series_a91f886289adc77eb25bb5f58667d2049}
+This method will divert the time series.. \begin{DoxyReturn}{Returns}
+the diverted time series.. 
+\end{DoxyReturn}
+\hypertarget{classtimeseries_1_1_time_series_a0cd53da9484fd4ee3b5c5110e79c0a7e}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!get\+Gradient@{get\+Gradient}}
+\index{get\+Gradient@{get\+Gradient}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{get\+Gradient}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Time\+Series.\+get\+Gradient (
+\begin{DoxyParamCaption}
+\item[{long}]{index}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_time_series_a0cd53da9484fd4ee3b5c5110e79c0a7e}
+Gets the x value of a \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} at index position \char`\"{}index\char`\"{}. 
+
+Definition at line 94 of file Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_time_series_a756d884d57220f887a2425e850450f33}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!get\+T@{get\+T}}
+\index{get\+T@{get\+T}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{get\+T}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Time\+Series.\+get\+T (
+\begin{DoxyParamCaption}
+\item[{long}]{index}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_time_series_a756d884d57220f887a2425e850450f33}
+Gets the t-\/value at index \char`\"{}index\char`\"{} 
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+t-\/value 
+\end{DoxyReturn}
+
+
+Definition at line 62 of file Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_time_series_a1bf3cb62b9976193264b68ef8d001919}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!get\+X@{get\+X}}
+\index{get\+X@{get\+X}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{get\+X}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Time\+Series.\+get\+X (
+\begin{DoxyParamCaption}
+\item[{long}]{index}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_time_series_a1bf3cb62b9976193264b68ef8d001919}
+Gets the x value of a \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} at index position \char`\"{}index\char`\"{}. 
+
+Definition at line 78 of file Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_time_series_a21a48f6a58aefd8b7261acccfc442425}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!length@{length}}
+\index{length@{length}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Time\+Series.\+length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_time_series_a21a48f6a58aefd8b7261acccfc442425}
+This method measures the length of the \hyperlink{classtimeseries_1_1_time_series}{Time\+Series}. Distance between the root \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} and the last \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 53 of file Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_time_series_ac841bb482c0ef9fe79839c255406c8c6}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!max@{max}}
+\index{max@{max}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{max}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Time\+Series.\+max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_time_series_ac841bb482c0ef9fe79839c255406c8c6}
+Calculates the max value of the time series \begin{DoxyReturn}{Returns}
+the max value 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_time_series_a70d9b8388e8b729ce9a719b25d3016aa}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!mean@{mean}}
+\index{mean@{mean}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{mean}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Time\+Series.\+mean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_time_series_a70d9b8388e8b729ce9a719b25d3016aa}
+Calculates the mean value of the time series \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 144 of file Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_time_series_a7851e2236b47e0c3440a949bda2bea91}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!median@{median}}
+\index{median@{median}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{median}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Time\+Series.\+median (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_time_series_a7851e2236b47e0c3440a949bda2bea91}
+Calculates the median of the time series \begin{DoxyReturn}{Returns}
+the median 
+\end{DoxyReturn}
+
+
+Definition at line 185 of file Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_time_series_a06f25367736b3f59807e6f060650bc7e}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!min@{min}}
+\index{min@{min}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{min}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Time\+Series.\+min (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_time_series_a06f25367736b3f59807e6f060650bc7e}
+Calculates the min value of the time series \begin{DoxyReturn}{Returns}
+the min value 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_time_series_a390324a52568f45892838f08142b8e44}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!size@{size}}
+\index{size@{size}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}abstract long timeseries.\+Time\+Series.\+size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{classtimeseries_1_1_time_series_a390324a52568f45892838f08142b8e44}
+This method counts the Data\+Points in the \hyperlink{classtimeseries_1_1_time_series}{Time\+Series}. \begin{DoxyReturn}{Returns}
+amount of Data\+Points 
+\end{DoxyReturn}
+\hypertarget{classtimeseries_1_1_time_series_a326e8450cc7ce9bc2118255227d20664}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!standard\+Deviation@{standard\+Deviation}}
+\index{standard\+Deviation@{standard\+Deviation}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{standard\+Deviation}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Time\+Series.\+standard\+Deviation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_time_series_a326e8450cc7ce9bc2118255227d20664}
+Calculates the standard deviaton of the time series \begin{DoxyReturn}{Returns}
+the standard deviation 
+\end{DoxyReturn}
+
+
+Definition at line 177 of file Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_time_series_ac3422314d9131982a0c8f35eb4a99fc2}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!sub\+Series@{sub\+Series}}
+\index{sub\+Series@{sub\+Series}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{sub\+Series}]{\setlength{\rightskip}{0pt plus 5cm}abstract {\bf Time\+Series} timeseries.\+Time\+Series.\+sub\+Series (
+\begin{DoxyParamCaption}
+\item[{double}]{ft, }
+\item[{double}]{tt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{classtimeseries_1_1_time_series_ac3422314d9131982a0c8f35eb4a99fc2}
+Will create a sub time series of the current one. This sub time series is totally independent from his parent 
+\begin{DoxyParams}{Parameters}
+{\em ft} & from t \\
+\hline
+{\em tt} & to t (including this one) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a time series from t to t 
+\end{DoxyReturn}
+\hypertarget{classtimeseries_1_1_time_series_a13599863c16f9c8c029c1f0ba9a17202}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!sub\+Series@{sub\+Series}}
+\index{sub\+Series@{sub\+Series}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{sub\+Series}]{\setlength{\rightskip}{0pt plus 5cm}abstract {\bf Time\+Series} timeseries.\+Time\+Series.\+sub\+Series (
+\begin{DoxyParamCaption}
+\item[{long}]{f\+Index, }
+\item[{long}]{t\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{classtimeseries_1_1_time_series_a13599863c16f9c8c029c1f0ba9a17202}
+Will create a sub time series of the current one. This sub time series is totally independent from his parent 
+\begin{DoxyParams}{Parameters}
+{\em f\+Index} & from index \\
+\hline
+{\em t\+Index} & to index (including this one) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a time series from index to index 
+\end{DoxyReturn}
+\hypertarget{classtimeseries_1_1_time_series_abc1e7b0fb89081f2214c7ef29efe23b2}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{to\+String}]{\setlength{\rightskip}{0pt plus 5cm}String timeseries.\+Time\+Series.\+to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_time_series_abc1e7b0fb89081f2214c7ef29efe23b2}
+
+
+Definition at line 214 of file Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_time_series_a255d92682fb235b5c9dbb4d803d7f8d3}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!variance@{variance}}
+\index{variance@{variance}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{variance}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Time\+Series.\+variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_time_series_a255d92682fb235b5c9dbb4d803d7f8d3}
+Calculates the variance of the time series \begin{DoxyReturn}{Returns}
+the variance 
+\end{DoxyReturn}
+
+
+Definition at line 163 of file Time\+Series.\+java.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classtimeseries_1_1_time_series_afeb87d5f2b84516c9cad5623a497a783}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!last@{last}}
+\index{last@{last}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{last}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Point} timeseries.\+Time\+Series.\+last\hspace{0.3cm}{\ttfamily [protected]}}\label{classtimeseries_1_1_time_series_afeb87d5f2b84516c9cad5623a497a783}
+This is a reference on the latest \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} of the time series. This reference often changes. 
+
+Definition at line 32 of file Time\+Series.\+java.
+
+\hypertarget{classtimeseries_1_1_time_series_affc228300a6e7aeff7646df39da9269a}{}\index{timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}!root@{root}}
+\index{root@{root}!timeseries\+::\+Time\+Series@{timeseries\+::\+Time\+Series}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Point} timeseries.\+Time\+Series.\+root\hspace{0.3cm}{\ttfamily [protected]}}\label{classtimeseries_1_1_time_series_affc228300a6e7aeff7646df39da9269a}
+This is a reference on the root \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} of the time series 
+
+Definition at line 27 of file Time\+Series.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/apolol92/\+Dokumente/\+Programmierung/\+Java/\+J\+Time\+Series/src/timeseries/\hyperlink{_time_series_8java}{Time\+Series.\+java}\end{DoxyCompactItemize}

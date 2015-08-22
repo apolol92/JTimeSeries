@@ -16,6 +16,15 @@ import timeseries.RegularlyTimeSeries;
  */
 public class MultiplicativeDampedTrend {
 
+    /**
+     * Until now, I wasn't able to test this method, so be careful & do a double check.
+     * @param ts original time series
+     * @param alpha parameter between [0,1]
+     * @param beta parameter between [0,1]
+     * @param damped parameter  between [0,1]
+     * @param h forecast steps
+     * @return multiplicative damped trended time series
+     */
     public static RegularlyTimeSeries fit(RegularlyTimeSeries ts, double alpha, double beta, double damped, long h) {
         RegularlyTimeSeries rts = new RegularlyTimeSeries(ts.getSpacing());
         long size = ts.size();

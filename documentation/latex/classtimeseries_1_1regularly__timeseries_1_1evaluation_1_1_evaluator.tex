@@ -1,0 +1,92 @@
+\hypertarget{classtimeseries_1_1regularly__timeseries_1_1evaluation_1_1_evaluator}{}\section{timeseries.\+regularly\+\_\+timeseries.\+evaluation.\+Evaluator Class Reference}
+\label{classtimeseries_1_1regularly__timeseries_1_1evaluation_1_1_evaluator}\index{timeseries.\+regularly\+\_\+timeseries.\+evaluation.\+Evaluator@{timeseries.\+regularly\+\_\+timeseries.\+evaluation.\+Evaluator}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{classtimeseries_1_1regularly__timeseries_1_1evaluation_1_1_evaluator_ab62c8ddebe2d247d6bdebb035e07973d}{Mean\+Absolute\+Error} (\hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} observations, \hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} model)
+\item 
+static double \hyperlink{classtimeseries_1_1regularly__timeseries_1_1evaluation_1_1_evaluator_a5f4cf4fa6634cd640543e5ebc4b63348}{Mean\+Squared\+Error} (\hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} observations, \hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} model)
+\item 
+static double \hyperlink{classtimeseries_1_1regularly__timeseries_1_1evaluation_1_1_evaluator_a67882978c0911fe2621c8641ad1c13c3}{Root\+Mean\+Squared\+Error} (\hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} observations, \hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} model)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by apolol92 on 22.\+08.\+15. To be able to evaluate the goodness of a forecasting model or to compare different methods, we can use following evaluation methods. Until now, not all the methods implemented. 
+
+Definition at line 20 of file Evaluator.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtimeseries_1_1regularly__timeseries_1_1evaluation_1_1_evaluator_ab62c8ddebe2d247d6bdebb035e07973d}{}\index{timeseries\+::regularly\+\_\+timeseries\+::evaluation\+::\+Evaluator@{timeseries\+::regularly\+\_\+timeseries\+::evaluation\+::\+Evaluator}!Mean\+Absolute\+Error@{Mean\+Absolute\+Error}}
+\index{Mean\+Absolute\+Error@{Mean\+Absolute\+Error}!timeseries\+::regularly\+\_\+timeseries\+::evaluation\+::\+Evaluator@{timeseries\+::regularly\+\_\+timeseries\+::evaluation\+::\+Evaluator}}
+\subsubsection[{Mean\+Absolute\+Error}]{\setlength{\rightskip}{0pt plus 5cm}static double timeseries.\+regularly\+\_\+timeseries.\+evaluation.\+Evaluator.\+Mean\+Absolute\+Error (
+\begin{DoxyParamCaption}
+\item[{{\bf Regularly\+Time\+Series}}]{observations, }
+\item[{{\bf Regularly\+Time\+Series}}]{model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classtimeseries_1_1regularly__timeseries_1_1evaluation_1_1_evaluator_ab62c8ddebe2d247d6bdebb035e07973d}
+This method calculates the mean absolute error. 
+\begin{DoxyParams}{Parameters}
+{\em observations} & the \char`\"{}real\char`\"{} time series \\
+\hline
+{\em model} & the estimated time series \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the mean absolute error 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file Evaluator.\+java.
+
+\hypertarget{classtimeseries_1_1regularly__timeseries_1_1evaluation_1_1_evaluator_a5f4cf4fa6634cd640543e5ebc4b63348}{}\index{timeseries\+::regularly\+\_\+timeseries\+::evaluation\+::\+Evaluator@{timeseries\+::regularly\+\_\+timeseries\+::evaluation\+::\+Evaluator}!Mean\+Squared\+Error@{Mean\+Squared\+Error}}
+\index{Mean\+Squared\+Error@{Mean\+Squared\+Error}!timeseries\+::regularly\+\_\+timeseries\+::evaluation\+::\+Evaluator@{timeseries\+::regularly\+\_\+timeseries\+::evaluation\+::\+Evaluator}}
+\subsubsection[{Mean\+Squared\+Error}]{\setlength{\rightskip}{0pt plus 5cm}static double timeseries.\+regularly\+\_\+timeseries.\+evaluation.\+Evaluator.\+Mean\+Squared\+Error (
+\begin{DoxyParamCaption}
+\item[{{\bf Regularly\+Time\+Series}}]{observations, }
+\item[{{\bf Regularly\+Time\+Series}}]{model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classtimeseries_1_1regularly__timeseries_1_1evaluation_1_1_evaluator_a5f4cf4fa6634cd640543e5ebc4b63348}
+This method calculates the mean squared error 
+\begin{DoxyParams}{Parameters}
+{\em observations} & the \char`\"{}real\char`\"{} time series \\
+\hline
+{\em model} & the estimated time series \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the mean squared error 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file Evaluator.\+java.
+
+\hypertarget{classtimeseries_1_1regularly__timeseries_1_1evaluation_1_1_evaluator_a67882978c0911fe2621c8641ad1c13c3}{}\index{timeseries\+::regularly\+\_\+timeseries\+::evaluation\+::\+Evaluator@{timeseries\+::regularly\+\_\+timeseries\+::evaluation\+::\+Evaluator}!Root\+Mean\+Squared\+Error@{Root\+Mean\+Squared\+Error}}
+\index{Root\+Mean\+Squared\+Error@{Root\+Mean\+Squared\+Error}!timeseries\+::regularly\+\_\+timeseries\+::evaluation\+::\+Evaluator@{timeseries\+::regularly\+\_\+timeseries\+::evaluation\+::\+Evaluator}}
+\subsubsection[{Root\+Mean\+Squared\+Error}]{\setlength{\rightskip}{0pt plus 5cm}static double timeseries.\+regularly\+\_\+timeseries.\+evaluation.\+Evaluator.\+Root\+Mean\+Squared\+Error (
+\begin{DoxyParamCaption}
+\item[{{\bf Regularly\+Time\+Series}}]{observations, }
+\item[{{\bf Regularly\+Time\+Series}}]{model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classtimeseries_1_1regularly__timeseries_1_1evaluation_1_1_evaluator_a67882978c0911fe2621c8641ad1c13c3}
+This method calculates the root mean squared error 
+\begin{DoxyParams}{Parameters}
+{\em observations} & the \char`\"{}real\char`\"{} time series \\
+\hline
+{\em model} & the estimated time series \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the root mean squared error 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file Evaluator.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/apolol92/\+Dokumente/\+Programmierung/\+Java/\+J\+Time\+Series/src/timeseries/regularly\+\_\+timeseries/evaluation/\hyperlink{_evaluator_8java}{Evaluator.\+java}\end{DoxyCompactItemize}

@@ -19,7 +19,14 @@ import timeseries.RegularlyTimeSeries;
 public class HoltsLinearTrendMethod {
 
 
-
+    /**
+     * Createse a holt's linear trended time series.
+     * @param ts origin time series
+     * @param alpha parameter between [0,1]
+     * @param beta parameter between [0,1]
+     * @param h forecast steps
+     * @return holt's linear trended time series
+     */
     public static RegularlyTimeSeries fit(RegularlyTimeSeries ts, double alpha, double beta, double h) {
         RegularlyTimeSeries rts = new RegularlyTimeSeries(ts.getSpacing());
         long size = ts.size();

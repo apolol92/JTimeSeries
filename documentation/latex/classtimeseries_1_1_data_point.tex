@@ -1,0 +1,183 @@
+\hypertarget{classtimeseries_1_1_data_point}{}\section{timeseries.\+Data\+Point Class Reference}
+\label{classtimeseries_1_1_data_point}\index{timeseries.\+Data\+Point@{timeseries.\+Data\+Point}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtimeseries_1_1_data_point_a31e9ba537d579768c35a99ca88b75c34}{Data\+Point} (double t, double x)
+\item 
+double \hyperlink{classtimeseries_1_1_data_point_a94f032b66174ae79c3ee47d5134408d8}{get\+T} ()
+\item 
+void \hyperlink{classtimeseries_1_1_data_point_a06c7f4942e871d604ef4b4ca91a92420}{set\+T} (double nt)
+\item 
+double \hyperlink{classtimeseries_1_1_data_point_a862374b58fe1d257afec950fd0088b3f}{get\+X} ()
+\item 
+void \hyperlink{classtimeseries_1_1_data_point_a9c428f60adc11fdfd703ed9c2b7ad2bd}{set\+X} (double nx)
+\item 
+\hyperlink{classtimeseries_1_1_data_point}{Data\+Point} \hyperlink{classtimeseries_1_1_data_point_af26707915ac85c5c18ad8a2be4266c3d}{get\+Prev\+Data\+Point} ()
+\item 
+\hyperlink{classtimeseries_1_1_data_point}{Data\+Point} \hyperlink{classtimeseries_1_1_data_point_ad6f4ba2c6a17750e5c3e19341a057958}{get\+Next\+Data\+Point} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtimeseries_1_1_data_point_adaf6a8f0dbd394d88cf46ee5f6656f65}{set\+Prev\+Data\+Point} (\hyperlink{classtimeseries_1_1_data_point}{Data\+Point} n\+Prev\+Data\+Point)
+\item 
+void \hyperlink{classtimeseries_1_1_data_point_a7e185c8a08f24b967e6a54c3305e04b5}{set\+Next\+Data\+Point} (\hyperlink{classtimeseries_1_1_data_point}{Data\+Point} n\+Next\+Data\+Point)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by apolol92 on 20.\+08.\+15. Represents a single data point, consiting of one value t of independent variable and one value of a dependent variable. Note that a data point can refer to a previously observed data point and also to the next observed data point. 
+
+Definition at line 18 of file Data\+Point.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtimeseries_1_1_data_point_a31e9ba537d579768c35a99ca88b75c34}{}\index{timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}!Data\+Point@{Data\+Point}}
+\index{Data\+Point@{Data\+Point}!timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}}
+\subsubsection[{Data\+Point}]{\setlength{\rightskip}{0pt plus 5cm}timeseries.\+Data\+Point.\+Data\+Point (
+\begin{DoxyParamCaption}
+\item[{double}]{t, }
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_data_point_a31e9ba537d579768c35a99ca88b75c34}
+Initializes the current \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} with the given value of the independent and dependent variable. 
+\begin{DoxyParams}{Parameters}
+{\em t} & the initial value of the independent variable. \\
+\hline
+{\em x} & the initial value of the dependent variable. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file Data\+Point.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtimeseries_1_1_data_point_ad6f4ba2c6a17750e5c3e19341a057958}{}\index{timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}!get\+Next\+Data\+Point@{get\+Next\+Data\+Point}}
+\index{get\+Next\+Data\+Point@{get\+Next\+Data\+Point}!timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}}
+\subsubsection[{get\+Next\+Data\+Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Point} timeseries.\+Data\+Point.\+get\+Next\+Data\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_data_point_ad6f4ba2c6a17750e5c3e19341a057958}
+Returns the current reference to the next \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} in the time series. \begin{DoxyReturn}{Returns}
+the current reference to the next \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} in the time series. 
+\end{DoxyReturn}
+
+
+Definition at line 110 of file Data\+Point.\+java.
+
+\hypertarget{classtimeseries_1_1_data_point_af26707915ac85c5c18ad8a2be4266c3d}{}\index{timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}!get\+Prev\+Data\+Point@{get\+Prev\+Data\+Point}}
+\index{get\+Prev\+Data\+Point@{get\+Prev\+Data\+Point}!timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}}
+\subsubsection[{get\+Prev\+Data\+Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Point} timeseries.\+Data\+Point.\+get\+Prev\+Data\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_data_point_af26707915ac85c5c18ad8a2be4266c3d}
+Returns the current reference to the previous \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} in the time series. \begin{DoxyReturn}{Returns}
+the current reference to the previous \hyperlink{classtimeseries_1_1_data_point}{Data\+Point} in the time series. 
+\end{DoxyReturn}
+
+
+Definition at line 93 of file Data\+Point.\+java.
+
+\hypertarget{classtimeseries_1_1_data_point_a94f032b66174ae79c3ee47d5134408d8}{}\index{timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}!get\+T@{get\+T}}
+\index{get\+T@{get\+T}!timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}}
+\subsubsection[{get\+T}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Data\+Point.\+get\+T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_data_point_a94f032b66174ae79c3ee47d5134408d8}
+Returns the current value assigned to the independent variable t. \begin{DoxyReturn}{Returns}
+the current value of the independent variable t. 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file Data\+Point.\+java.
+
+\hypertarget{classtimeseries_1_1_data_point_a862374b58fe1d257afec950fd0088b3f}{}\index{timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}!get\+X@{get\+X}}
+\index{get\+X@{get\+X}!timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}}
+\subsubsection[{get\+X}]{\setlength{\rightskip}{0pt plus 5cm}double timeseries.\+Data\+Point.\+get\+X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_data_point_a862374b58fe1d257afec950fd0088b3f}
+Returns the current value assigned to the dependent variable x. \begin{DoxyReturn}{Returns}
+the current value of the independent variable t. 
+\end{DoxyReturn}
+
+
+Definition at line 76 of file Data\+Point.\+java.
+
+\hypertarget{classtimeseries_1_1_data_point_a7e185c8a08f24b967e6a54c3305e04b5}{}\index{timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}!set\+Next\+Data\+Point@{set\+Next\+Data\+Point}}
+\index{set\+Next\+Data\+Point@{set\+Next\+Data\+Point}!timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}}
+\subsubsection[{set\+Next\+Data\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void timeseries.\+Data\+Point.\+set\+Next\+Data\+Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Point}}]{n\+Next\+Data\+Point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classtimeseries_1_1_data_point_a7e185c8a08f24b967e6a54c3305e04b5}
+Sets a reference to a new next \hyperlink{classtimeseries_1_1_data_point}{Data\+Point}. 
+\begin{DoxyParams}{Parameters}
+{\em n\+Next\+Data\+Point} & is the reference to the new next\+Data\+Point \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 118 of file Data\+Point.\+java.
+
+\hypertarget{classtimeseries_1_1_data_point_adaf6a8f0dbd394d88cf46ee5f6656f65}{}\index{timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}!set\+Prev\+Data\+Point@{set\+Prev\+Data\+Point}}
+\index{set\+Prev\+Data\+Point@{set\+Prev\+Data\+Point}!timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}}
+\subsubsection[{set\+Prev\+Data\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void timeseries.\+Data\+Point.\+set\+Prev\+Data\+Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Point}}]{n\+Prev\+Data\+Point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classtimeseries_1_1_data_point_adaf6a8f0dbd394d88cf46ee5f6656f65}
+Sets a reference to a new previous \hyperlink{classtimeseries_1_1_data_point}{Data\+Point}. 
+\begin{DoxyParams}{Parameters}
+{\em n\+Prev\+Data\+Point} & the reference to the new prev\+Data\+Point. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 101 of file Data\+Point.\+java.
+
+\hypertarget{classtimeseries_1_1_data_point_a06c7f4942e871d604ef4b4ca91a92420}{}\index{timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}!set\+T@{set\+T}}
+\index{set\+T@{set\+T}!timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}}
+\subsubsection[{set\+T}]{\setlength{\rightskip}{0pt plus 5cm}void timeseries.\+Data\+Point.\+set\+T (
+\begin{DoxyParamCaption}
+\item[{double}]{nt}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_data_point_a06c7f4942e871d604ef4b4ca91a92420}
+Sets the independent variable t to the given value 
+\begin{DoxyParams}{Parameters}
+{\em nt} & the new value of the independent variable t. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file Data\+Point.\+java.
+
+\hypertarget{classtimeseries_1_1_data_point_a9c428f60adc11fdfd703ed9c2b7ad2bd}{}\index{timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}!set\+X@{set\+X}}
+\index{set\+X@{set\+X}!timeseries\+::\+Data\+Point@{timeseries\+::\+Data\+Point}}
+\subsubsection[{set\+X}]{\setlength{\rightskip}{0pt plus 5cm}void timeseries.\+Data\+Point.\+set\+X (
+\begin{DoxyParamCaption}
+\item[{double}]{nx}
+\end{DoxyParamCaption}
+)}\label{classtimeseries_1_1_data_point_a9c428f60adc11fdfd703ed9c2b7ad2bd}
+Sets the dependent variable x to the given value 
+\begin{DoxyParams}{Parameters}
+{\em nx} & the new value of t he dependent variable x. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file Data\+Point.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/apolol92/\+Dokumente/\+Programmierung/\+Java/\+J\+Time\+Series/src/timeseries/\hyperlink{_data_point_8java}{Data\+Point.\+java}\end{DoxyCompactItemize}

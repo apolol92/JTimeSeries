@@ -13,8 +13,20 @@ import timeseries.RegularlyTimeSeries;
 
 /**
  * Created by apolol92 on 21.08.15.
+ * Ths class offers methods for the damped trend method.
  */
 public class DampedTrendMethod {
+
+    /**
+     * Until now, I wasn't able to test this method, so be careful & do a double check.
+     * This method creates a time series via the damped trend method.
+     * @param ts real time series
+     * @param alpha parameter between [0,1]
+     * @param beta parameter between [0,1]
+     * @param damped parameter  between [0,1]
+     * @param h forecast steps
+     * @return damped trend time series
+     */
     public static RegularlyTimeSeries fit(RegularlyTimeSeries ts, double alpha, double beta, double damped, long h) {
         RegularlyTimeSeries rts = new RegularlyTimeSeries(ts.getSpacing());
         long size = ts.size();

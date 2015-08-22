@@ -1,0 +1,47 @@
+\hypertarget{classtimeseries_1_1regularly__timeseries_1_1forecasters_1_1exponential__smoothing_1_1_simple_exponential_smoothing}{}\section{timeseries.\+regularly\+\_\+timeseries.\+forecasters.\+exponential\+\_\+smoothing.\+Simple\+Exponential\+Smoothing Class Reference}
+\label{classtimeseries_1_1regularly__timeseries_1_1forecasters_1_1exponential__smoothing_1_1_simple_exponential_smoothing}\index{timeseries.\+regularly\+\_\+timeseries.\+forecasters.\+exponential\+\_\+smoothing.\+Simple\+Exponential\+Smoothing@{timeseries.\+regularly\+\_\+timeseries.\+forecasters.\+exponential\+\_\+smoothing.\+Simple\+Exponential\+Smoothing}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} \hyperlink{classtimeseries_1_1regularly__timeseries_1_1forecasters_1_1exponential__smoothing_1_1_simple_exponential_smoothing_afebe870f327de6fa5215edbe4b9c0e3e}{fit} (\hyperlink{classtimeseries_1_1_regularly_time_series}{Regularly\+Time\+Series} ts, double alpha, long h)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by apolol92 on 21.\+08.\+15. Simple exponential smoothing(\+S\+E\+S) uses a weighted moving average with weights that decrease exponentially as observations come from further in the past. S\+E\+S only has a flat forecast function, for longer forecast horizons h $>$= 2, we get\+: y(t+h$\vert$\+T) = y(t+1$\vert$\+T). Disadvantage of S\+E\+S\+: It is only suitable for forecasting data with no trend and no seasonal pattern. 
+
+Definition at line 23 of file Simple\+Exponential\+Smoothing.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classtimeseries_1_1regularly__timeseries_1_1forecasters_1_1exponential__smoothing_1_1_simple_exponential_smoothing_afebe870f327de6fa5215edbe4b9c0e3e}{}\index{timeseries\+::regularly\+\_\+timeseries\+::forecasters\+::exponential\+\_\+smoothing\+::\+Simple\+Exponential\+Smoothing@{timeseries\+::regularly\+\_\+timeseries\+::forecasters\+::exponential\+\_\+smoothing\+::\+Simple\+Exponential\+Smoothing}!fit@{fit}}
+\index{fit@{fit}!timeseries\+::regularly\+\_\+timeseries\+::forecasters\+::exponential\+\_\+smoothing\+::\+Simple\+Exponential\+Smoothing@{timeseries\+::regularly\+\_\+timeseries\+::forecasters\+::exponential\+\_\+smoothing\+::\+Simple\+Exponential\+Smoothing}}
+\subsubsection[{fit}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Regularly\+Time\+Series} timeseries.\+regularly\+\_\+timeseries.\+forecasters.\+exponential\+\_\+smoothing.\+Simple\+Exponential\+Smoothing.\+fit (
+\begin{DoxyParamCaption}
+\item[{{\bf Regularly\+Time\+Series}}]{ts, }
+\item[{double}]{alpha, }
+\item[{long}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classtimeseries_1_1regularly__timeseries_1_1forecasters_1_1exponential__smoothing_1_1_simple_exponential_smoothing_afebe870f327de6fa5215edbe4b9c0e3e}
+Creates a time series via S\+E\+S 
+\begin{DoxyParams}{Parameters}
+{\em ts} & original time series \\
+\hline
+{\em alpha} & The smoothing parameter alpha with 0 $<$ alpha $<$= 1 controls the weights decrease. \\
+\hline
+{\em h} & forecasting steps/range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+simple exponential smoothed time series 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file Simple\+Exponential\+Smoothing.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/apolol92/\+Dokumente/\+Programmierung/\+Java/\+J\+Time\+Series/src/timeseries/regularly\+\_\+timeseries/forecasters/exponential\+\_\+smoothing/\hyperlink{_simple_exponential_smoothing_8java}{Simple\+Exponential\+Smoothing.\+java}\end{DoxyCompactItemize}

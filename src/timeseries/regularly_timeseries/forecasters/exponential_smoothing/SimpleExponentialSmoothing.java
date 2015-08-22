@@ -10,7 +10,7 @@
 package timeseries.regularly_timeseries.forecasters.exponential_smoothing;
 
 import timeseries.RegularlyTimeSeries;
-import timeseries.TimeSeries;
+
 
 /**
  * Created by apolol92 on 21.08.15.
@@ -21,10 +21,15 @@ import timeseries.TimeSeries;
  * with no trend and no seasonal pattern.
  */
 public class SimpleExponentialSmoothing {
-    /*
-        The smoothing parameter alpha with 0 < alpha <= 1 controls the weights decrease.
+
+    /**
+     * Creates a time series via SES
+     * @param ts original time series
+     * @param alpha The smoothing parameter alpha with 0 < alpha <= 1 controls the weights decrease.
+     * @param h forecasting steps/range
+     * @return simple exponential smoothed time series
      */
-    public static RegularlyTimeSeries _fit(RegularlyTimeSeries ts, double alpha, long h) {
+    public static RegularlyTimeSeries fit(RegularlyTimeSeries ts, double alpha, long h) {
         RegularlyTimeSeries rts = new RegularlyTimeSeries(ts.getSpacing());
         double lt_1 = ts.getX(0);
         boolean first = true;
